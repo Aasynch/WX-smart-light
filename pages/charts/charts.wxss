@@ -1,0 +1,26 @@
+/* pages/charts/charts.wxss */
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.top{
+  display:flex; 
+  flex-direction:row; 
+  justify-content:flex-start; 
+  width:100%;
+  height: 30px;
+}
+.line{
+  width:  100%;
+  height:  1px;
+  background: grey;
+}
+.container{
+  position: static
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}

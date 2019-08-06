@@ -1,0 +1,11 @@
+<view style="display:flex;justify-content: center;"> 
+  <image style="width:130rpx;height:130rpx;border-radius:50%;margin-top:10%;" src="{{userInfo.avatarUrl}}"></image>
+</view>
+
+<view class="inputView">
+  <input class="input" placeholder="请输入设备号" placeholder-style="color: gray" bindinput="listenerDeviceInput" />
+</view>
+<view class="inputView">
+  <input class="input" password="true" placeholder="请输入密码" placeholder-style="color: gray" bindinput="listenerPasswordInput" />
+</view>
+<button style="margin-left: 15rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" bindtap="listenerLogin">登录</button>

@@ -1,0 +1,31 @@
+<view class="top">
+  <view style="display:flex; justify-content:flex_start;width:20%;align-items:center; background:#f7f7fa">
+  </view>
+  <view style="display:flex; justify-content:center;width:60%; align-items:center; background:#f7f7fa">
+    <image style="width:30px;height:30px"src='../../img/icons/index.png'></image>
+  </view>
+  <view style="display:flex; justify-content:flex_end;width:20%; align-items:center; background:#f7f7fa">
+  </view>
+</view>
+
+<view style="display:flex;justify-content: center; height: 40px"> 
+</view>
+
+<view style="display:flex;justify-content: center; height: 30px;">
+<text style='font-size:20px;color:grey'>点击图标开启或关闭</text> 
+</view>
+<view style="display:flex;justify-content: center; height: 70%;margin-top:10px"> 
+  <image style="width:160px;height:160px;" src="../../img/icons/light.png" bindtap='change'></image>
+</view>
+
+<view style="display:flex;justify-content: center; height: 30px; margin-top:60px">
+<text>当前状态：{{status}}</text> 
+</view>
+<view style="display:flex;justify-content: center; height: 30px; margin-top:30px">
+<text decode='true'>锁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定：</text> 
+<text bindtap='handle_lock'>{{lock}}</text>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="请输入密码" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text'password="true"placeholder="请输入密码" bindinput="listenerPasswordInput" />  
+</modal>  

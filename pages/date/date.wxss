@@ -1,0 +1,25 @@
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.select {
+  display:flex; 
+  flex-direction:row; 
+  justify-content:flex-start; 
+  width:100%;
+  height: 30px;
+}
+.line{
+  width:  100%;
+  height:  1px;
+  background: #f7f7fa;
+}
+.top{
+  display:flex; 
+  flex-direction:row; 
+  justify-content:flex-start; 
+  width:100%;
+  height: 30px;
+}

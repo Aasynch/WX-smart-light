@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/control/control",
+    "pages/index/index",
+    "pages/time/time",
+    "pages/charts/charts",
+    "pages/date/date",
+    "pages/pwd/pwd",
+    "pages/timer/timer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "智能开关",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/icons/index.png",
+        "iconPath": "img/icons/index.png",
+        "pagePath": "pages/control/control",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/icons/temp.png",
+        "iconPath": "img/icons/temp.png",
+        "pagePath": "pages/charts/charts",
+        "text": "温度"
+      },
+      {
+        "selectedIconPath": "img/icons/time.png",
+        "iconPath": "img/icons/time.png",
+        "pagePath": "pages/time/time",
+        "text": "定时"
+      },
+      {
+        "selectedIconPath": "img/icons/pwd.png",
+        "iconPath": "img/icons/pwd.png",
+        "pagePath": "pages/pwd/pwd",
+        "text": "修改密码"
+      }
+    ]
+  }
+}

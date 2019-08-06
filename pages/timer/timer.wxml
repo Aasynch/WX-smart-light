@@ -1,0 +1,75 @@
+<view class="top">
+  <view style="display:flex; justify-content:flex_start;width:20%;align-items:center; background:#f7f7fa">
+  <text decode="true" bindtap='go_back' style='font-size:16px;font-color:grey'>&nbsp;&nbsp;返回</text>
+  </view>
+  <view style="display:flex; justify-content:center;width:60%; align-items:center; background:#f7f7fa">
+    <image style="width:30px;height:30px"src='../../img/icons/time.png'></image>
+  </view>
+  <view style="display:flex; justify-content:flex-end;width:20%; align-items:center; background:#f7f7fa">
+  <text decode="true" bindtap='confirm_time' style='font-size:16px;font-color:grey'>确认&nbsp;&nbsp;</text>
+  </view>
+</view>
+
+<view>
+  <picker-view indicator-style="height: 50px;" style="width: 90%; height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{times}}" style="display:flex; justify-content:center; line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{hours}}" style="display:flex; justify-content:center; line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{mins}}" style="display:flex; justify-content:center; line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+
+  <text>\n</text>
+
+  <view class="line"></view>
+
+  <view class="item">
+    <view style="display:flex;width:20%;align-items:center">
+      <text style="padding-left:20px; font-size:18px;">重复</text>
+    </view>
+    <view style="display:flex; justify-content:flex-end;width:80%; align-items:center">
+      <text bindtap="go_date_choose" style="color:grey;font-size:15px">{{date_choose}} ></text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="item">
+    <view style="display:flex;width:20%;align-items:center">
+      <text style="padding-left:20px; font-size:18px;">持续</text>
+    </view>
+    <view style="display:flex; justify-content:flex-end;width:80%; align-items:center">
+      <picker bindchange="pickerChange_hour" value="{{last_hour}}" range="{{last_hours}}">
+        <view style="font-size:15px;">
+          {{last_hours[last_hour]}}
+          <text decode="true" style="color:grey; font-size:15px;">时&nbsp;</text>
+        </view>
+      </picker>
+      <picker bindchange="pickerChange_min" value="{{last_min}}" range="{{last_mins}}">
+        <view style="font-size:15px;">
+          {{last_mins[last_min]}}
+          <text decode="true" style="color:grey; font-size:15px;">分&nbsp;</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="item">
+    <view style="display:flex;width:20%;align-items:center">
+      <text style="padding-left:20px; font-size:18px;">标签</text>
+    </view>
+    <view style="display:flex;width:70%;align-items:center">
+    </view>
+    <view style="display:flex; justify-content:flex-end;width:10%; align-items:center">
+      <input maxlength="5" style="font-size:15px" value="标签" bindblur="get_label"/>
+    </view>
+  </view>
+
+  <view class="line"></view>
+</view>

@@ -1,0 +1,100 @@
+  <view class="top">
+    <view style="display:flex; justify-content:flex_start;width:20%; align-items:center;background:#f7f7fa">
+      <text decode="true" bindtap='go_back' style='font-size:16px;font-color:grey'>&nbsp;&nbsp;返回</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:60%; align-items:center;background:#f7f7fa">
+      <image style="width:30px;height:30px"src='../../img/icons/time.png'></image>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center;background:#f7f7fa">
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <text>\n</text>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_1">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周一</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show1 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_2">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周二</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show2 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_3">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周三</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show3 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_4">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周四</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show4 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_5">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周五</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show5 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select" bindtap="f_show_6">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周六</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show6 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+
+  <view class="select"  bindtap="f_show_7">
+    <view style="display:flex; justify-content:center;width:80%;align-items:center">
+      <text style="font-size:16px">每周日</text>
+    </view>
+    <view style="display:flex; justify-content:center;width:20%; align-items:center">
+      <icon class="{{show7 ? 'show' : 'hide'}}  "type="success_no_circle" size="30">
+      </icon>
+    </view>
+  </view>
+  
+  <view class="line"></view>
